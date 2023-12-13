@@ -27,8 +27,7 @@
 * [Add-the-README-template](#add-the-readme-template)
 * [Repository requirements](#repository-requirements)
 * [Managing your repository](#managing-your-repository)
-* [Update *datasets.json* information](#update-datasetsjson-information)
-* [Update *platform.json* information](#update-platformjson-information)
+* [Update your models information](#update-your-models-information)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
   
@@ -198,11 +197,9 @@ Some useful steps to manage your repository:
 - Create a `.gitignore` to avoid uploading images or other data
 
 
-## Update *datasets.json* information 
-When you upload a new dataset to Zenodo, it is necessary to update this information in the `datasets.json` file included in [Zenodo_Datasets](https://github.com/ICAERUS-EU/Zenodo_Datasets). Please follow the template format in `datasets_template.json`. This file will be used to update the datasets information in [Zenodo_Datasets](https://github.com/ICAERUS-EU/Zenodo_Datasets) and the [ICAERUS platform](https://icaerus.eu/icaerus-platform/). 
 
-## Update *platform.json* information 
-If you add a new model to your UC repository, please, update this information in the `platform.json` file included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template). Please follow the template format in `platform_template.json`. This file will be used to update the [ICAERUS platform](https://icaerus.eu/icaerus-platform/) information. 
+## Update your models information 
+If you add a new model to your UC repository, please, create a `platform.json` inside your repo following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template). Then fill in the required information of your model to the file in your repo. This information will be used to upload the [ICAERUS platform](https://icaerus.eu/icaerus-platform/).
 
 
 
