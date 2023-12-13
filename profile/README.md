@@ -2,10 +2,10 @@
   <p>
     <a href="https://icaerus.eu" target="_blank">
       <img width="50%" src="https://icaerus.eu/wp-content/uploads/2022/09/ICAERUS-logo-white.svg"></a>
-    <h3 align="center">ICAERUS GitHub repo template🦚</h3>
+    <h3 align="center">ICAERUS GitHub Tutorial🦚</h3>
     
    <p align="center">
-    Template to copy-paste or take as an example for other ICAERUS GitHub repo's, orginating from WP2.
+    Tutorial to use the ICAERUS github.
     <br/>
     <br/>
     <br/>
@@ -22,17 +22,52 @@
 ## Table Of Contents
 
 * [Summary](#summary)
-* [Readme requirements](#readme-requirements)
-* [Repo requirements](#repo-requirements)
+* [Join ICAERUS-EU GitHub](#join-icaerus-eu-github)
+* [Add your Use Case repository to ICAERUS-EU GitHub](#add-your-use-case-repository-to-icaerus-eu-github)
+* [Add-the-README-template](#add-the-readme-template)
+* [Repository requirements](#repository-requirements)
+* [Managing your repository](#managing-your-repository)
+* [Update *datasets.json* information](#update-datasetsjson-information)
+* [Update *platform.json* information](#update-platformjson-information)
 * [Authors](#authors)
-* [Acknowledgments](#acknowledgments)
+* [Acknowledgements](#acknowledgements)
   
 ## Summary
-This GitHub repository template is designed for the ICAERUS-EU project, providing a standardized structure for managing and sharing project-related code, documentation, and resources. It includes essential folders and files to help streamline development, collaboration, and tracking progress within the project.
+This GitHub README is designed as a tutorial and template for the ICAERUS-EU project.  
 
-## Readme requirements
-The idea is that this readme text is copied and adjusted for your own project-repo readme. 
-Start by [creating a repo on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo), from your GitHub account. 
+
+## Join ICAERUS-EU GitHub
+First of all, **it is necessary that you join ICAERUS-EU GitHub**. If you are not a member yet, please send an email to [jurrian.doornbos@wur.nl](mailto:jurrian.doornbos@wur.nl?subject=ICAERUS-Github-access) with your GitHub account information: email/username.
+
+
+## Add your Use Case repository to ICAERUS-EU GitHub
+
+### If you already have a UC Github repository
+If you already have your own UC github repository, you would need to transfer it to the ICAERUS-EU GitHub ([tutorial](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository)). 
+
+1. Go to your repository and click on `Settings`
+2. Scroll down to `Danger Zone`
+3. Click on transfer to `ICAERUS-EU`
+4. Update your local repository clones (download the transferred repository from ICAERUS-EU GitHub and make sure that all the URLs in the headers, image, etc. reflect this transfer: `https://github.com/jurriandoornbos/uavgeo` -> **`https://github.com/icaerus-eu/uavgeo`**).
+   
+
+### If you do not have a UC Github repository 
+If you haven't created your UC Github repository yet, you can create one directly in the ICAERUS GitHub:
+
+1. Go to `ICAERUS-EU GitHub`
+2. Click on `repositories -> New`
+3. Add your repository name, e.g. `UC1_Crop_Monitoring`
+4. Click on `Public` and `Add a README file`
+
+
+Useful links:
+- [Creating a repo on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+- [Youtube GitHub tutorial](https://www.youtube.com/watch?v=HkdAHXoRtos) 
+
+
+
+## Add the README template
+Update your readme with this template and fill it with your UC information.
 
 ### Header
 You can copy-and-paste the header and shields directly into your own readme file (please change the `repo-title` in the urls to the correct ones).
@@ -95,13 +130,8 @@ This project is funded by the European Union, grant ID 101060643.
 <img src="https://rea.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2021-04/EN-Funded%20by%20the%20EU-POS.jpg" alt="https://cordis.europa.eu/project/id/101060643" width="200"/>
 
 ```
-### ICAERUS organization
-You can decide later or immediately to publish it under the ICAERUS organization (if you are already a member). **If your are not a member yet of this organization, please send an e-mail to [jurrian.doornbos@wur.nl](mailto:jurrian.doornbos@wur.nl?subject=ICAERUS-Github-access) with your GitHub account information: email/username.**
 
-You can change it to the ICAERUS organization also [later down the line](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository) if you are not immediatly ready yet. Make sure to change all the URLs in the headers, image, etc. to reflect this transfer: `https://github.com/jurriandoornbos/uavgeo` -> **`https://github.com/icaerus-eu/uavgeo`**
-
-
-## Repo requirements
+## Repository requirements
 ### License
 Choose a license and LICENSE file. Preferably something open-source like GPL-v3.
 ### Folder structure
@@ -152,9 +182,34 @@ To help out findability, and usability in the ICAERUS platform (WP6), the repo's
 
 Please choose no more than 10 Topics, although 3 or 4 should be able to cover the whole repo.
 
+## Managing your repository 
+
+Some useful steps to manage your repository: 
+- Create issues
+  - In your repository, go to `Issues` and create a new issue, e.g. *Get train images for model detection algorithm*
+  - This issue will be referred as a number in order of creation, e.g. *#1*
+  - Use this reference in your commits
+- To manage your repository from your local machine, go to the directory where you want to save your repo using the *cmd* and execute: 
+  - `git clone <repository url>` 
+- To update new files, using your cmd, go to the repo directory and execute: 
+  - `git add .`
+  - `git commit -m "Extracting plant images for model #1"`
+  - `git push`
+- Create a `.gitignore` to avoid uploading images or other data
+
+
+## Update *datasets.json* information 
+When you upload a new dataset to Zenodo, it is necessary to update this information in the `datasets.json` file included in [Zenodo_Datasets](https://github.com/ICAERUS-EU/Zenodo_Datasets). Please follow the template format in `datasets_template.json`. This file will be used to update the datasets information in [Zenodo_Datasets](https://github.com/ICAERUS-EU/Zenodo_Datasets) and the [ICAERUS platform](https://icaerus.eu/icaerus-platform/). 
+
+## Update *platform.json* information 
+If you add a new model to your UC repository, please, update this information in the `platform.json` file included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template). Please follow the template format in `platform_template.json`. This file will be used to update the [ICAERUS platform](https://icaerus.eu/icaerus-platform/) information. 
+
+
+
 ## Authors
 
 * **Jurrian Doornbos** - *Wageningen University* - [Jurrian Doornbos](https://github.com/jurriandoornbos)
+* **Esther Vera** - *Noumena* - [Esther Vera](https://github.com/EstherNoumena)
 
 ## Acknowledgements
 This project is funded by the European Union, grant ID 101060643.
