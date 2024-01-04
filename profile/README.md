@@ -154,32 +154,8 @@ Ideas:
 
 You can also check out [`uavgeo`](https://github.com/icaerus-eu/uavgeo) for an example `python` project folder/file structure that is published and available through `pip`. Or [`p2p-ros`](https://github.com/jurriandoornbos/p2p_ros) for a ROS related project.
 
-### Topics
-To help out findability, and usability in the ICAERUS platform (WP6), the repo's should be [labeled correctly using GitHub Topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics). These topics are still under construction and debate, but here is an idea of what we can use:
-
-* UC related: `uc1`, `uc2`, `uc3`, `uc4`, `uc5`
-* WP related: `wp2`, `wp3`, `wp6`
-* Content related: 
-    - `ml`: Machine Learning (statistical learning)
-    - `dl`: Deep Learning
-    - `cv`: Computer vision
-    - `hsi`/`msi`: Hyperspectral/Multispectral imaging
-    - `flight-control`: Flight Control
-    - `path-planning`: Path planning algorithms/implementations
-    - `dataset`: Dataset related information/explanation/links/etc.
-    - `sim`: Simulation related
-    - `framework`: Framework/architectural/backbone code
-    - `ros`: Robotics Operating System packages
-* Topic related:
-    - `vineyards`: Vineyards
-    - `spraying`: Drone Spraying
-    - `forest`: 
-* Location related:
-    - `spain`
-    - `macedonia`
-* We should be able to come up with a lot more, and stick to these for the whole project.
-
-Please choose no more than 10 Topics, although 3 or 4 should be able to cover the whole repo.
+### WP6 Platform
+To help out findability, and usability in the ICAERUS platform (WP6), the repo's should include a `platform.json`, following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template/blob/main/platform.json). Then fill in the required information of your model to the file in your repo. This information will be used to upload the [ICAERUS platform](https://icaerus.eu/icaerus-platform/).
 
 ## Managing your repository 
 
@@ -195,12 +171,6 @@ Some useful steps to manage your repository:
   - `git commit -m "Extracting plant images for model #1"`
   - `git push`
 - Create a `.gitignore` to avoid uploading images or other data
-
-
-
-## Update your models information 
-If you add a new model to your UC repository, please, create a `platform.json` inside your repo following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template). Then fill in the required information of your model to the file in your repo. This information will be used to upload the [ICAERUS platform](https://icaerus.eu/icaerus-platform/).
-
 
 
 ## Authors
