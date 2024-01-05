@@ -129,6 +129,8 @@ This project is funded by the European Union, grant ID 101060643.
 <img src="https://rea.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2021-04/EN-Funded%20by%20the%20EU-POS.jpg" alt="https://cordis.europa.eu/project/id/101060643" width="200"/>
 
 ```
+## Add the platform.json template for WP6 Platform integration
+To help out findability, and usability in the ICAERUS platform (WP6), the repo's should include a `platform.json`, following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template/blob/main/platform.json). Then fill in the required information of your model to the file in your repo. This information will be used to upload the [ICAERUS platform](https://icaerus.eu/icaerus-platform/).
 
 ## Repository requirements
 ### License
@@ -153,9 +155,6 @@ Ideas:
 ```
 
 You can also check out [`uavgeo`](https://github.com/icaerus-eu/uavgeo) for an example `python` project folder/file structure that is published and available through `pip`. Or [`p2p-ros`](https://github.com/jurriandoornbos/p2p_ros) for a ROS related project.
-
-### WP6 Platform
-To help out findability, and usability in the ICAERUS platform (WP6), the repo's should include a `platform.json`, following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template/blob/main/platform.json). Then fill in the required information of your model to the file in your repo. This information will be used to upload the [ICAERUS platform](https://icaerus.eu/icaerus-platform/).
 
 ## Managing your repository 
 
