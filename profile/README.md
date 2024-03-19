@@ -137,7 +137,7 @@ To add new models to your repository you must follow the next structure:
   - README.md
   - best.pt
 
-where XX is the actual number of the model (01,02,...). Then inside de models folder you will have one folder per model with its own documentation and weights or code. The README.md file should be structure as the example in [UC1 model](https://github.com/ICAERUS-EU/UC1_Crop_Monitoring/tree/main/models/01_plant_disease_detection_yolov8). Having the following information: 
+where `XX` is the actual number of the model (01,02,...). Then inside de models folder you will have one folder per model with its own documentation and weights or code. The `README.md` file should be structure as the example in [UC1 model](https://github.com/ICAERUS-EU/UC1_Crop_Monitoring/tree/main/models/01_plant_disease_detection_yolov8). Having the following information: 
 
 **Model name** 
 - Description, here it can be included a link to the code used for the development or training of the model.
@@ -146,19 +146,18 @@ where XX is the actual number of the model (01,02,...). Then inside de models fo
 - Output
 - Type
 - Date
-  
-**You would also have to include an image of the performance expected**. 
+- An image of the performance expected 
 
-The end of the document contains the Authors and the Acknowledgements, as shown in this template. *The content on every folder can be adjusted for every model depending on its necessities but the main idea is that here we find the model to execute over the code.* 
+The end of the document will show the `Authors` and the `Acknowledgements` as in this template. The content on every folder can be adjusted for every model depending on its necessities but the main idea is that here we find the model to execute over the code.
 
-In the main page of your repository you will have to include the references to each model folder. You can follow the structure of [UC1 MAIN README](https://github.com/ICAERUS-EU/UC1_Crop_Monitoring/tree/main). There is a reference for the models folder and a reference per model with a brief description.
+In the main `README.md` of your repository you will have to include the references to each model folder. You can follow the structure of [UC1 MAIN README](https://github.com/ICAERUS-EU/UC1_Crop_Monitoring/tree/main). There is a reference for the models folder and a reference per model with a brief description.
 
 
 
 ### Update the *platform.json* template for WP6 Platform integration
-To help out findability, and usability in the ICAERUS platform (WP6), the repo's should include a `platform.json`, following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template/blob/main/platform.json). Then fill in the required information of your model to the file in your repo. This information will be used to upload the [ICAERUS platform](https://icaerus.eu/icaerus-platform/). 
+To help out findability, and usability in the ICAERUS platform (WP6), the repo's should include a `platform.json`, following the template included in [Icaerus_Template](https://github.com/ICAERUS-EU/icaerus-repo-template/blob/main/platform.json). Then fill in the required information of your model to the file in your repo. In this template, you should also add the url for the specific model folder and the image reference of the performance expected. You can look at the example [UC1 PLATFORM JSON](https://github.com/ICAERUS-EU/UC1_Crop_Monitoring/blob/main/platform.json). 
 
-In this template, you should also add the url for the specific model folder and the image reference of the performance expected. You can look at the example [UC1 PLATFORM JSON](https://github.com/ICAERUS-EU/UC1_Crop_Monitoring/blob/main/platform.json).
+This information will be used to upload the [ICAERUS PLATFORM](https://www.platform.icaerus.eu/) so its implementation it's extremely important. As every UC uploads their models and updates the `platform.json`, we will monthly translate this information to the main `platform.json` located in the [ICAERUS_DDAL](https://github.com/ICAERUS-EU/ICAERUS_DDAL/tree/main) that is the one used for the integration with the platform. 
 
 
 
