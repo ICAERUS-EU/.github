@@ -163,7 +163,14 @@ This information will be used to upload the [ICAERUS PLATFORM](https://www.platf
 
 ## Repository requirements
 ### License
-Choose a license and LICENSE file. Preferably something open-source like GPL-v3.
+The Drone Data Analytics Library is open source, allowing anyone to view, modify, and contribute to its development. Contributors have the flexibility to choose from several open-source licenses as defined by the Open Source Initiative (OSI). You can explore these options at [OSI's official site](https://opensource.org/licenses).
+
+Some popular open-source licenses allowed in the DDAL:
+ - CC-BY: Creative Commons Attribution license, allowing use and modification as long as proper credit is given.
+ - Apache 2.0: A permissive license that provides an express grant of patent rights to users and requires attribution.
+ - MIT: A simple and permissive license, allowing reuse with minimal restrictions, only requiring attribution.
+ - GPLv3: A copyleft license that ensures any derivative work must also be open source under the same license.
+   
 ### Folder structure
 From there on in, you can decide on folder structure which makes the most sense for the project. For some ideas of folder structures you can do [some research](https://mitcommlab.mit.edu/broad/commkit/file-structure/), or use what is already logical to you/your organization.
 ```
